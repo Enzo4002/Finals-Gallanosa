@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #fff;
+}
+
+header {
+    background: linear-gradient(60deg, #000000, #000000);
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px #0202e2;
+}
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background .background-layer {
+    position: absolute;
+    width: 100%;
+    height: 33.33%;
+    background-image: url('gif3.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background .background-top {
+    top: 0;
+}
+
+.background .background-center {
+    top: 33.33%;
+}
+
+.background .background-bottom {
+    top: 66.66%;
+}
+.logo {
+    margin-left: 30px;
+}
+
+.logo img {
+    height: 80px; 
+}
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.navigation li {
+    margin: 0 20px; 
+}
+
+.navigation a {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 20px; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navigation a:before {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #0004f7;
+    transition: width 0.3s ease-out, left 0.3s ease-out;
+    transform: translateX(-50%);
+}
+
+.navigation a:hover {
+    color: #0004f7;
+    transform: translateY(-3px); 
+}
+
+.navigation a:hover:before {
+    width: calc(100% - 40px); 
+    left: 50%; 
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 20px; 
+}
+/* About Section */
+.about-section {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+.about-section h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-section ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Images Section */
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-item {
+    width: calc(50% - 20px);
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(2, 2, 226);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-item p {
+    margin: 10px 0 0 0;
+}
+
+.image-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(247, 247, 247, 0.925);
+}
+
+.text-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(2, 2, 226);
+}
+
+footer {
+    background: linear-gradient(90deg, #000000, #000000);
+    color: #00d7f8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 -4px 6px rgb(2, 2, 226);
+    position: relative;
+    z-index: 1; /* Ensure footer is above background */
+}
+.footer-logo img {
+    width: 100px; /* Adjusted width to maintain square shape */
+    height: 100px; /* Equal height to maintain square shape */
+    border-radius: 0%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Adding box shadow */
+    transition: transform 0.3s;
+}
+
+.footer-logo img:hover {
+    transform: rotate(360deg); /* Example of interactive effect */
+}
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #0dc8d9;
+}
+footer a {
+    color: #0004f7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #000;
+}

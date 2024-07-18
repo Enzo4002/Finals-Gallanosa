@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="background">
+        <div class="background-layer background-top"></div>
+        <div class="background-layer background-center"></div>
+        <div class="background-layer background-bottom"></div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Cyber Security Logo">
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="content">
+            <section class="images">
+                <div class="image-item">
+                    <img src="best practices.png" alt="Cyber Security Image 3 Example">
+                    <p style="color: #f0f0f0;">Businesses should implement cybersecurity best practices such as conducting regular security assessments and audits, educating employees about cybersecurity threats and safe practices, implementing access controls and data encryption, establishing incident response plans, and staying compliant with industry regulations. Investing in cybersecurity measures helps protect sensitive business data and preserves customer trust.</p>
+                </div>
+                <div class="image-item">
+                    <img src="How-To-Protect-Yourself-Online-1.webp" alt="Cyber Security Image 4 Example">
+                    <p style="color: #f0f0f0;">Individuals can protect themselves online by using strong and unique passwords, enabling two-factor authentication (2FA), keeping software and systems updated, being cautious of suspicious emails and links, and regularly backing up important data. Additionally, using antivirus software and being mindful of privacy settings on social media are essential practices.</p>
+                </div>
+            </section>
+
+
+            <!-- Service sections -->
+            <section class="service">
+                <h2>Managed Firewall Services</h2>
+                <p>Our managed firewall services ensure your network is protected 24/7, offering robust defense against unauthorized access and cyber threats.</p>
+            </section>
+
+            <section class="service">
+                <h2>Incident Response Planning</h2>
+                <p>We help businesses establish comprehensive incident response plans to swiftly address and mitigate cybersecurity incidents.</p>
+            </section>
+            
+            <section class="service">
+                <h2>Penetration Testing</h2>
+                <p>Identify vulnerabilities in your systems with our thorough penetration testing services, ensuring proactive measures against potential breaches.</p>
+            </section>
+
+            <section class="service">
+                <h2>Security Awareness Training</h2>
+                <p>Educate your employees on cybersecurity best practices through our tailored security awareness training programs, minimizing human-related security risks.</p>
+            </section>
+
+            <!-- Add more service sections as needed -->
+            <section class="text-content">
+                <p style="color: #ffffff;"><strong>Cyber Security encompasses the methods and practices used to protect digital systems, networks, and data from unauthorized access, attacks, and damage. It is essential in safeguarding personal information, business assets, and government operations in an increasingly interconnected world. Effective cybersecurity involves a combination of technology, processes, and user education to mitigate risks, respond to threats, and ensure the confidentiality, integrity, and availability of digital assets. As cyber threats evolve, cybersecurity measures must continually adapt to new challenges to maintain trust, privacy, and the smooth operation of digital environments globally.</strong></p>
+            </section>
+            <section class="services container">
+                <div class="service">
+                    <img src="web design.png" alt="Service 1">
+                    <div class="service-info">
+                        <h2>Web Design & Development</h2>
+                        <p>Create stunning websites that drive engagement and conversions. We specialize in responsive design, custom development, and user-friendly interfaces.</p>
+                        <ul class="service-details">
+                            <li><i class="fas fa-check-circle"></i> Mobile Optimization</li>
+                            <li><i class="fas fa-check-circle"></i> E-commerce Solutions</li>
+                            <li><i class="fas fa-check-circle"></i> SEO Integration</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="service">
+                    <img src="dms.jpg" alt="Service 2">
+                    <div class="service-info">
+                        <h2>Digital Marketing Strategy</h2>
+                        <p>Boost your online presence with our tailored digital marketing strategies. From SEO to social media management, we ensure your brand stands out.</p>
+                        <ul class="service-details">
+                            <li><i class="fas fa-check-circle"></i> Content Creation</li>
+                            <li><i class="fas fa-check-circle"></i> PPC Campaigns</li>
+                            <li><i class="fas fa-check-circle"></i> Analytics & Reporting</li>
+                        </ul>
+                    </div>
+                </div>
+            
+
+            </section>
+            
+            
+                <!-- Add more service cards as needed -->
+            
+                <style>
+                    .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+    justify-items: center; /* Center items within grid */
+}
+
+.service {
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgb(7, 3, 235);
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Ensure rounded corners don't get cut off by images */
+    position: relative;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 4px 20px rgb(255, 255, 255);
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    object-fit: cover; /* Ensure images cover the entire container */
+    filter: brightness(0.8); /* Darken the image for overlay effect */
+    transition: transform 0.3s ease;
+}
+
+.service:hover img {
+    transform: scale(1.05); /* Enlarge image on hover */
+}
+
+.service-info {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.service h2 {
+    color: #ffffff; /* Solid white text color */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #ffffff; /* Solid white text color */
+    font-size: 1.1rem;
+}
+
+.service-details {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.service-details li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #ffffff; /* Solid white text color */
+}
+
+.service-details li i {
+    margin-right: 8px;
+    color: #42a5f5; /* Icon color */
+}
+
+                    
+                </style>
+            </section>
+            
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="logo.png" alt="Cyber Security Logo">
+        </div>
+        <p>Web Designer: Enzo Gallanosa</p>
+        <p>Email: <a href="mailto:202312671@fit.edu.ph">202312671@fit.edu.ph</a></p>
+    </footer>
+</body>
+</html>
